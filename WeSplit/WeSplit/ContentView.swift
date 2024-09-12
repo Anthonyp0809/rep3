@@ -43,7 +43,6 @@ struct ContentView: View {
                 }
                 Section("You entered:"){
                     Text(checkAmount, format: .currency(code: Locale.current.currency?.identifier ?? "USD") )
-                    
                 }
                 Section("How much tip do you want to leave?") {
                     Picker("Tip percentage", selection: $tipPercentage) {
